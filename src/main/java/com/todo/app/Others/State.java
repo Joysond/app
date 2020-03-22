@@ -1,4 +1,4 @@
-package com.todo.app.Others;
+package com.todo.app.others;
 
 public enum State {
     CREATED, INPROGRESS, DONE

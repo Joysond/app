@@ -1,4 +1,4 @@
-package com.todo.app.Others;
+package com.todo.app.others;
 
 public class TodoResponse {
     String message;

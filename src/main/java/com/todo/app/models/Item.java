@@ -1,6 +1,6 @@
 package com.todo.app.models;
 
-import com.todo.app.Others.State;
+import com.todo.app.others.State;
 
 import javax.persistence.*;
 import java.util.Date;
