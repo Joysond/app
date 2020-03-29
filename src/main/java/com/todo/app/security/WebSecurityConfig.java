@@ -59,6 +59,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .exceptionHandling().authenticationEntryPoint(unauthorizedHandler).and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .authorizeRequests().antMatchers("/api/auth/**").permitAll()
+                .antMatchers("/item/all-items").hasAnyRole("ADMIN")
                 // TODO enable swagger with basic authentication
                 // .antMatchers("/swagger.ui.html").permitAll()
                 .anyRequest().authenticated();
